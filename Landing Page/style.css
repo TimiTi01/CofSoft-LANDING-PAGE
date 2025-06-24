@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Top Bar */
+.top-bar {
+  background: #fd6e0a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.contact-info span {
+  margin-right: 15px;
+}
+
+.top-btn {
+  background: #ff2d75;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Header */
+header {
+  background: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ff2d75;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  background: url('https://i.imgur.com/KNlB1su.jpg') no-repeat center center/cover;
+  padding: 120px 30px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #ff4081;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 0 5px;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(90deg, #ffa35c, #f94e6f);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.feature-box {
+  width: 30%;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+}
+
+/* About */
+.about {
+  display: flex;
+  padding: 60px 30px;
+  background: white;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+/* Services */
+.services {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.service-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
